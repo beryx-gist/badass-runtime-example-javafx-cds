@@ -19,6 +19,7 @@ set DEFAULT_JVM_OPTS=${defaultJvmOpts}
 
 set CDS_JVM_OPTS=-XX:ArchiveClassesAtExit=%~dp0/server/%~n0.jsa
 if exist %~dp0/server/%~n0.jsa set CDS_JVM_OPTS=-XX:SharedArchiveFile=%~dp0/server/%~n0.jsa
+rem CDS_JVM_OPTS=%CDS_JVM_OPTS%
 
 set JAVA_HOME="%~dp0.."
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
