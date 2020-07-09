@@ -6,7 +6,7 @@
 
 A small JavaFX 14 non-modular application that shows how to use the [Badass Runtime Plugin](https://github.com/beryx/badass-runtime-plugin/).
 
-It allows you to create a custom runtime image of your application and a platform-specific installer for it. The start script configures the application to use class data sharing.
+It allows you to create a custom runtime image of your application. The start script configures the application to use class data sharing.
 
 ### Usage
 **Running with gradle:**
@@ -25,11 +25,3 @@ cd build/image/bin
 ```
 
 A window containing the text `Hello, OpenJFX!` should appear on the screen.
-
-
-**Creating a platform-specific installer:**
-```
-./gradlew jpackage
-```
-
-The above command will generate the platform-specific installers in the `build/jpackage` directory.
